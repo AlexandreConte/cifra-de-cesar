@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --tamanho-fonte: 1.4rem;
+    --cor-fonte: #fff;
+    --raio-borda: 5px;
+    --tempo-transicao: 0.35s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    font-family: "Montserrat", sans-serif;
+    color: var(--cor-fonte);
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    text-align: center;
+}
+
+.destaque {
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.imagem {
+    margin: 20px auto;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.campo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: var(--tamanho-fonte);
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.entrada {
+    outline: none;
+    flex: 1;
+    padding: 5px 10px;
+    margin: 0 20px;
+    font-size: var(--tamanho-fonte);
+    background-color: #0005;
+    color: var(--cor-fonte);
+    border-radius: var(--raio-borda);
+    border: solid 1px #0009;
+    transition: background-color var(--tempo-transicao);
+}
+
+.botao {
+    margin: 20px auto;
+    padding: 10px 35px;
+    border-radius: 200px;
+    border: none;
+    color: var(--cor-fonte);
+    background-color: #0005;
+    cursor: pointer;
+    transition: background-color var(--tempo-transicao);
+}
+
+.invisivel {
+    display: none;
+}
+
+#resposta {
+    font-weight: 700;
+    font-size: var(--tamanho-fonte);
+    margin: 10px auto;
+    padding: 15px 30px;
+    border: solid 1px #0009;
+    background-color: #0005;
+    color: var(--cor-fonte);
+    border-radius: var(--raio-borda);
+}
+
+.campo label {
+    margin: 10px auto;
+}
+
+.botao:hover {
+    background-color: #0009;
+}
+
+.entrada:hover {
+    background-color: #0009;
+}
+
+.entrada:focus {
+    background-color: #000;
+}

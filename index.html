@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Cifra de Cesar</title>
+</head>
+
+<body>
+    <div id="root">
+        <img src="assets/cifra.jpeg" alt="logo" class="imagem">
+        <h1 class="destaque">Criptografe a sua mensagem:</h1>
+        <form id="form" onsubmit="criptografar(event)">
+            <div class="campo texto">
+                <label for="para-criptografar">Digite a sua mensagem: </label>
+                <input type="text" class="entrada" id="para-criptografar" placeholder="Sua mensagem aqui">
+            </div>
+            <div class="campo seletor">
+                <label for="deslocamento">
+                    Mudar o início do alfabeto para:
+                </label>
+                <select class="entrada" id="deslocamento">
+                </select>
+            </div>
+        </form>
+        <button id="botao" class="botao">
+            Criptografar
+        </button>
+        <p class="invisivel" id="resposta">
+            
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
